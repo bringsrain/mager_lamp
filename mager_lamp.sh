@@ -53,6 +53,7 @@ read -s -p "Password user root mariadb: " mariadbpass
 
 cat <<-EOT | sudo tee /srv/http/index.php &>/dev/null
 <?php
+<h1>TESTING PAGE MAGER LAMP</h1>
 echo 'Versi PHP: ' . phpversion(). "\n";
 \$mysqli = new mysqli("localhost", "root", "$mariadbpass");
 if (\$mysqli->ping()){
