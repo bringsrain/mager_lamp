@@ -1,5 +1,5 @@
 # Skrip mager_lamp.sh
-Hanya skrip sederhana untuk instalasi LAMP stack di manjaro. Saat ini skrip ini menginstalasi paket-paket berikut:
+Hanya skrip sederhana untuk instalasi LAMP stack di Manjaro Linux. Saat ini skrip ini menginstalasi paket-paket berikut:
 - apache
 - mariadb
 - mariadb-clients
