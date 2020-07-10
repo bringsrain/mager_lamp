@@ -49,8 +49,7 @@ sudo sed -i 's:^;\(extension=pdo_mysql\):\1:' /etc/php/php.ini
 sudo systemctl restart httpd.service
 
 # Buat file contoh php untuk tes php-apache dan php-mysqli
-echo "Password user root mariadb: "
-read -s mariadbpass
+read -s -p "Password user root mariadb: " mariadbpass
 
 cat <<-EOT | sudo tee /srv/http/index.php &>/dev/null
 <?php
